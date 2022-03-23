@@ -4,7 +4,7 @@
 becomes a primary obstacle to itself.
 </h2>
 
-<img src="https://i.ibb.co/d7f3NfD/data.jpg" height=1020>
+<img src="https://i.ibb.co/d7f3NfD/data.jpg" height="600">
 
 <h2>The player controls a dot, square, or object on a bordered plane. 
 As it moves forward, it leaves a trail behind, resembling a moving snake. 
