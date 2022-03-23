@@ -4,6 +4,9 @@ Created on Tue Mar 22 21:22:21 2022
 
 @author: Mannier
 """
+"""
+Class create scoreboard and update score if the snake eat food
+"""
 from turtle import Turtle
 
 ALIGNMENT = "center"

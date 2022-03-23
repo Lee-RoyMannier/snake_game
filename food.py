@@ -4,6 +4,10 @@ Created on Tue Mar 22 20:49:55 2022
 
 @author: Mannier
 """
+"""
+Class of the food for the snake game.
+Here the program generate a food in random screen
+"""
 from turtle import Turtle
 import random
 
