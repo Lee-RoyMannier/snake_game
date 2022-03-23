@@ -60,7 +60,7 @@ while game_on:
     snake.move()
 
     # if the snake head is inferior of the distance of the food then the user
-    # win one point and the food is another random generate
+    # win one point and the food is generated
     if snake.snake_head.distance(food) < 15:
         winsound.PlaySound("eat.wav", winsound.SND_ASYNC)
         food.refresh_food()
@@ -71,14 +71,14 @@ while game_on:
     # the game is over
     if snake.snake_head.xcor() > 280 or snake.snake_head.xcor() < -280 or (
             snake.snake_head.ycor() > 280 or snake.snake_head.ycor() < -280):        
-        game_on = False
-        score_board.game_over()
-        
+        score_board.reset()
+        snake.reset()
     # if the head of the snake touch another snake part then the game is over
     for segment in snake.segments[1:]:
         if snake.snake_head.distance(segment) < 10:
-            game_is_on = False
-            score_board.game_over()
+            score_board.reset()
+            snake.reset()
+
             
 screen.exitonclick()
 snake.done()
